@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/NeXT/Library/Android/sdk/extras/android/m2repository/com/android/support/support-v4/19.0.0/support-v4-19.0.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="afee690af14bd2c32d400cdf78e746fd45c386fa">
+        <dex dex="/Users/NeXT/Projects/GitDemo/PagerSlidingTabStripPro/sample/build/intermediates/pre-dexed/debug/support-v4-19.0.0-7aa09eb09cc7dfd6bff500a7ab50dab91bb87f50.jar" />
+    </item>
+    <item
+        jar="/Users/NeXT/Projects/GitDemo/PagerSlidingTabStripPro/sample/build/intermediates/exploded-aar/PagerSlidingTabStripPro/library/unspecified/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="ea08c41a2f93f0173738b98220897ca70bea3620">
+        <dex dex="/Users/NeXT/Projects/GitDemo/PagerSlidingTabStripPro/sample/build/intermediates/pre-dexed/debug/classes-6db97c63bc94ce783d4320282a1b6c784d349bb9.jar" />
+    </item>
+    <item
+        jar="/Users/NeXT/Projects/GitDemo/PagerSlidingTabStripPro/sample/libs/android-viewbadger.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="f1303b50d535716ca7601c5014357b8435658313">
+        <dex dex="/Users/NeXT/Projects/GitDemo/PagerSlidingTabStripPro/sample/build/intermediates/pre-dexed/debug/android-viewbadger-a04b4b04bc91f174b834b49e753ed41ebf1fa7a9.jar" />
+    </item>
+
+</items>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/Users/NeXT/Projects/GitDemo/PagerSlidingTabStripPro/sample/build/intermediates/exploded-aar/PagerSlidingTabStripPro/library/unspecified/res/values/values.xml -->
+    <eat-comment/>
+    <color name="background_tab_pressed">#6633B5E5</color>
+    <!-- From: file:/Users/NeXT/Projects/GitDemo/PagerSlidingTabStripPro/sample/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="background_window">#FFE5E5E5</color>
+    <declare-styleable name="PagerSlidingTabStrip"><attr format="color" name="pstsIndicatorColor"/><attr format="color" name="pstsUnderlineColor"/><attr format="color" name="pstsDividerColor"/><attr format="dimension" name="pstsIndicatorHeight"/><attr format="dimension" name="pstsUnderlineHeight"/><attr format="dimension" name="pstsDividerPadding"/><attr format="dimension" name="pstsTabPaddingLeftRight"/><attr format="dimension" name="pstsScrollOffset"/><attr format="reference" name="pstsTabBackground"/><attr format="boolean" name="pstsShouldExpand"/><attr format="boolean" name="pstsTextAllCaps"/></declare-styleable>
+    <!-- From: file:/Users/NeXT/Projects/GitDemo/PagerSlidingTabStripPro/sample/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- From: file:/Users/NeXT/Projects/GitDemo/PagerSlidingTabStripPro/sample/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="action_contact">Contact</string>
+    <string name="app_name">PagerSlidingTabStrip</string>
+    <!-- From: file:/Users/NeXT/Projects/GitDemo/PagerSlidingTabStripPro/sample/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="ActionBarStyle" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:icon">@drawable/ic_launcher_actionbar</item>
+        <item name="android:background">#FF666666</item>
+    </style>
+    <style name="AppBaseTheme" parent="android:Theme.Light"/>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="android:windowBackground">@color/background_window</item>
+        <item name="android:actionBarStyle">@style/ActionBarStyle</item>
+    </style>
+</resources>

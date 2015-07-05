@@ -1,7 +1,7 @@
 # Android PagerSlidingTabStrip Eazy Tab
 根据 [PagerSlidingTabStrip](https://github.com/astuetz/PagerSlidingTabStrip) 项目修改而来，方便给顶部选择的 Tab 添加 BadgeView 显示红点，如果你之前使用过 PagerSlidingTabStrip 这个库，那马儿始终这个库的学习成本很低，设置的方法跟 PagerSlidingTabStrip 完全相同。
 
-### 项目代码解析见：[博客地址](http://kingideayou.github.io/categories/PagerSlidingTabStrip/)
+### 项目代码解析见[博客](http://kingideayou.github.io/categories/PagerSlidingTabStrip/)
 
 ### 效果图
 使用 android-viewBadge 添加红点效果：

@@ -4,13 +4,11 @@
 ### 项目代码解析见[博客](http://kingideayou.github.io/categories/PagerSlidingTabStrip/)
 
 ### 效果图
-使用 android-viewBadge 添加红点效果：
+使用 android-viewBadge 添加红点，滑动时 Tab 颜色改变效果：
 
-<img src="https://raw.githubusercontent.com/kingideayou/PagerSlidingTabStripPro/master/pic/demo_img1.png" width = "380" height = "620" alt="红点效果图 TextView" align=center /><img src="https://raw.githubusercontent.com/kingideayou/PagerSlidingTabStripPro/master/pic/demo_img2.png" width = "380" height = "620" alt="红点效果图 ImageView" align=center />
+<img src="https://raw.githubusercontent.com/kingideayou/PagerSlidingTabStripPro/master/pic_2/demo_1_tv.gif" width = "380" height = "620" alt="红点效果图 ImageView" align=center />
 
-滑动时 Tab 颜色改变效果：
-
-<img src="https://raw.githubusercontent.com/kingideayou/PagerSlidingTabStripPro/master/pic_2/demo_1_tv.gif" width = "380" height = "620" alt="红点效果图 ImageView" align=center /><img src="https://raw.githubusercontent.com/kingideayou/PagerSlidingTabStripPro/master/pic_2/demo_1_ib.gif" width = "380" height = "620" alt="红点效果图 ImageView" align=center />
+<img src="https://raw.githubusercontent.com/kingideayou/PagerSlidingTabStripPro/master/pic_2/demo_1_ib.gif" width = "380" height = "620" alt="红点效果图 ImageView" align=center />
 
 
 # License

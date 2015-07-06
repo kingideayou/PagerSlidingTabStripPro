@@ -20,6 +20,7 @@ import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Canvas;
+import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Paint.Style;
 import android.graphics.Typeface;
@@ -330,6 +331,51 @@ public class PagerSlidingTabStrip extends HorizontalScrollView {
         }
     }
 
+	private void updateTabColor(View tabView, float value) {
+		if (tabType == TAB_TYPE_TEXT) {
+			updateTextViewColor(tabView, value);
+		} else {
+			updateImageButtonAlpha(tabView, value);
+		}
+	}
+
+	private void updateImageButtonAlpha(View tabView, float currentPositionOffset) {
+		int alphaInteger = (int)(155 + currentPositionOffset * 100);
+        float alpha = 0.5f + currentPositionOffset * 0.5f;
+
+		if(tabView instanceof ImageButton) {
+			if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
+				tabView.setAlpha(alpha);
+			} else {
+				((ImageButton)tabView).setAlpha(alphaInteger);
+			}
+		} else if (tabView instanceof FrameLayout
+				&& ((FrameLayout) tabView).getChildAt(0) instanceof ImageButton) {
+			if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
+				((FrameLayout) tabView).getChildAt(0).setAlpha(alpha);
+			} else {
+				((ImageButton) ((FrameLayout) tabView).getChildAt(0)).setAlpha(alphaInteger);
+			}
+		}
+	}
+
+	//更新所有 TextView 文字颜色
+	private void updateTextViewColor(View tabView, float currentPositionOffset) {
+
+		int currentAlpha = (int)(155 + currentPositionOffset * 100);
+
+
+//		http://stackoverflow.com/questions/4602902/how-to-set-the-text-color-of-textview-in-code
+		if (tabView instanceof TextView) {
+			((TextView) tabView).setTextColor(Color.argb(currentAlpha, Color.red(tabTextColor), Color.green(tabTextColor), Color.blue(tabTextColor)));
+//            ((TextView) tabView).setAlpha(alpha);
+		} else if (tabView instanceof FrameLayout
+				&& ((FrameLayout) tabView).getChildAt(0) instanceof TextView) {
+			((TextView) ((FrameLayout) tabView).getChildAt(0)).setTextColor(Color.argb(currentAlpha, Color.red(tabTextColor), Color.green(tabTextColor), Color.blue(tabTextColor)));
+//            ((TextView) ((FrameLayout) tabView).getChildAt(0)).setAlpha(alpha);
+		}
+	}
+
     private void updateImageButtonAlpha(View tabView, int value) {
         float alpha = 1.0f;
         int alphaInteger = 255;
@@ -356,6 +402,9 @@ public class PagerSlidingTabStrip extends HorizontalScrollView {
 
     //更新所有 TextView 文字颜色
     private void updateTextViewColor(View tabView, int color) {
+
+		Color.argb(Color.alpha(color), Color.red(color), Color.green(color), Color.blue(color));
+
 //		http://stackoverflow.com/questions/4602902/how-to-set-the-text-color-of-textview-in-code
 		float alpha = 1.0f;
 		int alphaInteger = 255;
@@ -387,7 +436,7 @@ public class PagerSlidingTabStrip extends HorizontalScrollView {
 
 		rectPaint.setColor(indicatorColor);
 
-        updateTabColor(tabsContainer.getChildAt(currentPosition), tabTextColor);
+        updateTabColor(tabsContainer.getChildAt(currentPosition), 1.0f);
 
 		// default: line below current tab
 		View currentTab = tabsContainer.getChildAt(currentPosition);
@@ -405,6 +454,7 @@ public class PagerSlidingTabStrip extends HorizontalScrollView {
 			lineRight = (currentPositionOffset * nextTabRight + (1f - currentPositionOffset) * lineRight);
 
 
+			/*
 			if(currentPositionOffset > 0.5) {
                 updateTabColor(currentTab, tabTextColorNormal);
                 updateTabColor(nextTab, tabTextColor);
@@ -412,6 +462,10 @@ public class PagerSlidingTabStrip extends HorizontalScrollView {
                 updateTabColor(currentTab, tabTextColor);
                 updateTabColor(nextTab, tabTextColorNormal);
 			}
+			*/
+
+			updateTabColor(currentTab, 1 - currentPositionOffset);
+			updateTabColor(nextTab, currentPositionOffset);
 
 		}
 

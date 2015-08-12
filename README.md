@@ -1,5 +1,5 @@
 # Android PagerSlidingTabStripPro
-根据 [PagerSlidingTabStrip](https://github.com/astuetz/PagerSlidingTabStrip) 项目修改而来，轻松实现「知乎客户端」指示器切换时文字颜色渐变的效果，同时方便给顶部选择的 Tab 添加 BadgeView 显示红点。  
+根据 [PagerSlidingTabStrip](https://github.com/astuetz/PagerSlidingTabStrip) 项目修改而来，轻松实现**「知乎客户端」**指示器切换时**文字颜色**或**图片透明度**渐变的效果，同时方便给顶部选择的 Tab 添加 BadgeView **显示红点**。  
 如果你之前使用过 PagerSlidingTabStrip 这个库，那么学习使用这个库的学习成本很低，设置的方法跟 PagerSlidingTabStrip 完全相同。
 
 ### 项目代码解析见[博客](http://kingideayou.github.io/categories/PagerSlidingTabStrip/)
